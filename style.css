@@ -1,80 +1,104 @@
 header {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
+
 * {
-	font-family: Raleway, Times News Roman;
-	font-size: 15px;
+  font-family: Raleway, Times News Roman;
+  font-size: 15px;
+}
+
+@keyframes img_anime {
+  0% {
+    transform: scale(0) rotate(0deg);
+  }
+  25% {
+    transform: scale(1) rotate(120deg);
+  }
+  50% {
+    transform: scale(0.5) rotate(240deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+@keyframes nope_div {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-5px);
+  }
+  40% {
+    transform: translateY(5px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+  80% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 img {
-	display: block;
-	width: 300px;
-	height: 300px;
-	transition: width 2s, height 2s, background-color 2s, transform 2s;
-  }
-  
-  img:hover {
-	width: 200px;
-	height: 200px;
-	transform: rotate(360deg);
-  }
-  
+  display: block;
+  width: 200px;
+  height: 200px;
+  animation: img_anime 4s ease-in-out;
+}
+
 .coordonnée {
-	margin: 5px;
+  margin: 5px;
 }
 i {
-	margin-right: 10px;
-	color: rgb(0, 102, 255);
+  margin-right: 10px;
+  color: rgb(0, 102, 255);
 }
 
 h1 {
-	font-size: 30px;
-	font-weight: 400;
-	margin: 0px;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0px;
 }
 
-#titre{
-	width: 80%;
-	
-	font-size: 15px;
-	font-family: Raleway,Aguafina Script, Impact, Times News Roman;
-	background: white;
-	box-shadow: 3px 3px 3px black;
-	padding: 10px;
-	margin: 10px;
-	margin-bottom: 17px;
- }
-
-h2
-{
-
-font-size: 20px;
-border-bottom: 3px double black;
+#titre {
+  width: 80%;
+  font-size: 15px;
+  font-family: Raleway, Aguafina Script, Impact, Times News Roman;
+  background: white;
+  box-shadow: 3px 3px 3px black;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 17px;
 }
 
-body
-{
-	font-family: Raleway, Times New Roman, Arial;
-	background: linear-gradient(white, rgb(0, 191, 255)) ;
-	background-attachment: local;
-	margin: 0px;
-	padding: 0px;
+h2 {
+  font-size: 20px;
+  border-bottom: 3px double black;
+}
+
+body {
+  font-family: Raleway, Times New Roman, Arial;
+  background: linear-gradient(white, rgb(0, 191, 255));
+  background-attachment: local;
 }
 
 main {
-	margin-top: 30px;
+  margin-top: 30px;
 }
 
 .carte {
-	border: 1px solid rgb(222, 16, 16);
-	margin: 20px;
-	padding:10px;
-	box-shadow: 3px 3px 3px black;
-	background: rgb(178, 234, 243);
-	cursor: pointer;
-	
+  border: 1px solid rgb(222, 16, 16);
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 3px 3px 3px black;
+  background: rgb(178, 234, 243);
+  cursor: pointer;
 }
 .carte:hover {
-	transform: scale3d(0.95, 1.05, 1.3);
-	box-shadow: 5px 5px 5px rgb(0, 85, 255);
+  box-shadow: 5px 5px 5px rgb(0, 85, 255);
+  animation: nope_div 0.4s forwards;
 }
