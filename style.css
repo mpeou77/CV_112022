@@ -53,6 +53,7 @@ img {
 .coordonnée {
   margin: 5px;
 }
+
 i {
   margin-right: 10px;
   color: rgb(0, 102, 255);
@@ -86,19 +87,22 @@ body {
   background-attachment: local;
 }
 
-main {
-  margin-top: 30px;
-}
 
 .carte {
-  border: 1px solid rgb(222, 16, 16);
-  margin: 20px;
-  padding: 10px;
-  box-shadow: 3px 3px 3px black;
-  background: rgb(178, 234, 243);
-  cursor: pointer;
+  padding: 0px 10px;
+  transform:
+    perspective(2750px)
+    translate3d(0px, 0px, -250px)
+    rotateX(27deg)
+    scale(0.9, 0.9);
+  border-radius: 20px;
+  border: 5px solid #e6e6e6;
+  box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
+  transition: 0.4s ease-in-out transform;
+
+  
 }
+
 .carte:hover {
-  box-shadow: 5px 5px 5px rgb(0, 85, 255);
-  animation: nope_div 0.4s forwards;
+  transform: translate3d(0px, 0px, -150px);
 }
