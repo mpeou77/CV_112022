@@ -1,6 +1,6 @@
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 * {
@@ -13,17 +13,21 @@ header {
     transform: scale(0) rotate(0deg);
   }
   25% {
-    transform: scale(1) rotate(120deg);
+    transform: scale(0.7) rotate(120deg);
   }
   50% {
-    transform: scale(0.5) rotate(240deg);
+    transform: scale(0.4) rotate(240deg);
   }
+  90% {
+    transform: scale(0.6) rotate(300deg);
+  }
+  
   100% {
     transform: scale(1) rotate(360deg);
   }
 }
 
-@keyframes nope_div {
+@keyframes yep_div {
   0% {
     transform: translateY(0px);
   }
@@ -99,10 +103,35 @@ body {
   border: 5px solid #e6e6e6;
   box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
   transition: 0.4s ease-in-out transform;
-
-  
 }
 
 .carte:hover {
   transform: translate3d(0px, 0px, -150px);
 }
+
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  img, #titre {
+    margin: 0 auto;
+  }
+  * {
+    font-size: 13px;
+  }
+}
+/****
+.carte {
+  border: 1px solid rgb(222, 16, 16);
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 3px 3px 3px black;
+  background: rgb(178, 234, 243);
+  cursor: pointer;
+}
+.carte:hover {
+  box-shadow: 5px 5px 5px rgb(0, 85, 255);
+  animation: yep_div 0.4s forwards;
+}
+*****/
