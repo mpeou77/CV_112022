@@ -5,7 +5,7 @@ header {
 
 * {
   font-family: Raleway, Times News Roman;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 @keyframes img_anime {
@@ -47,6 +47,7 @@ header {
     transform: translateY(0px);
   }
 }
+
 img {
   display: block;
   width: 200px;
@@ -85,6 +86,10 @@ h2 {
   border-bottom: 3px double black;
 }
 
+#nomDuPoste {
+  border-bottom: none;
+}
+
 body {
   font-family: Raleway, Times New Roman, Arial;
   background: linear-gradient(white, rgb(0, 191, 255));
@@ -115,7 +120,7 @@ body {
     flex-direction: column;
   }
   img, #titre {
-    margin: 0 auto;
+    margin: 10px auto;
   }
   * {
     font-size: 13px;
