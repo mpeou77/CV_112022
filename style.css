@@ -52,7 +52,7 @@ img {
   display: block;
   width: 200px;
   height: 200px;
-  animation: img_anime 4s ease-in-out;
+  /*animation: img_anime 4s ease-in-out;*/
 }
 
 .coordonnée {
@@ -96,7 +96,7 @@ body {
   background-attachment: local;
 }
 
-
+/*
 .carte {
   padding: 0px 10px;
   transform:
@@ -108,7 +108,7 @@ body {
   border: 5px solid #e6e6e6;
   box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
   transition: 0.4s ease-in-out transform;
-}
+}*/
 
 .carte:hover {
   transform: translate3d(0px, 0px, -150px);
@@ -126,7 +126,7 @@ body {
     font-size: 13px;
   }
 }
-/****
+/*************************version pour imprimer*****************************************/
 .carte {
   border: 1px solid rgb(222, 16, 16);
   margin: 20px;
@@ -135,8 +135,10 @@ body {
   background: rgb(178, 234, 243);
   cursor: pointer;
 }
-.carte:hover {
+
+
+/*.carte:hover {
   box-shadow: 5px 5px 5px rgb(0, 85, 255);
   animation: yep_div 0.4s forwards;
 }
-*****/
+*/
